@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FAFAFA;
+    position: relative;
+    font-family: "Raleway", serif;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 1em;
+    background-color: #FFFFFF;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.1);
+}
+
+
+
+
+.logo-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+.logo-icon {
+    color: #7C4EE4;
+    font-size: 2rem;
+}
+
+.logo-text {
+    color: #333333;
+    font-family: "Raleway", serif;
+    font-weight: 700;
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+main {
+    padding: 4rem 1rem; /* Top padding to avoid overlap with the fixed header */
+}
+
+
+.blog-title {
+    color: #333333;
+    font-weight: 700;
+}
+.blog-body {
+    font-family: "Roboto", serif;
+    color: #666666;
+}
