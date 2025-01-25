@@ -1,80 +1,103 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #FAFAFA;
-    position: relative;
-    font-family: "Raleway", serif;
+  margin: 0;
+  background-color: #fafafa;
+  position: relative;
+  font-family: "Raleway", serif;
 }
-
-
 
 header {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; 
-    padding: 1em;
-    background-color: #FFFFFF;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1em;
+  background-color: #ffffff;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .logo-link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
 }
+
 .logo-icon {
-    color: #7C4EE4;
-    font-size: 2rem;
+  color: #7c4ee4;
+  font-size: 2rem;
 }
 
 .logo-text {
-    color: #333333;
-    font-family: "Raleway", serif;
-    font-weight: 700;
+  color: #333333;
+  font-family: "Raleway", serif;
+  font-weight: 700;
 }
 
-
-.nav-list {
-    display: flex;
-    gap: 0.5rem;
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 5em 1em 1em 1em;
+  color: #4c4c4c;
+  font-weight: 600;
+  background-color: #7c4ee4;
 }
 
-.nav-list li {
-    list-style: none;
+.post-label {
+  color: #ffffff;
 }
 
-.nav-list a {
-    text-decoration: none;
+.post-input,
+.post-body {
+  font-family: "Raleway", serif;
+  color: #4c4c4c;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: none;
 }
 
-main {
-    padding: 4rem 1rem; /* Top padding to avoid overlap with the fixed header */
+.post-body {
+  resize: none;
 }
 
+.post-btn {
+  font-family: "Raleway", serif;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  color: #373737;
+  width: 25%;
+  min-width: 55px;
+  cursor: pointer;
+}
+
+.posts-container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 .blog-title {
-    color: #333333;
-    font-weight: 700;
+  color: #333333;
+  font-weight: 700;
 }
+
 .blog-body {
-    font-family: "Roboto", serif;
-    color: #666666;
+  font-family: "Roboto", serif;
+  color: #666666;
 }
